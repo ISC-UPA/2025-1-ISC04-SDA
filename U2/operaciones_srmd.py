@@ -22,7 +22,7 @@ class Calculadora:
 
         buttons = [('+', self.sumar), ('-', self.restar), ('*', self.multiplicar), ('/', self.dividir)]
         for i, (text, command) in enumerate(buttons):
-            tk.Button(self.root, text=text, command=command, width=5, padx=15, pady=5).grid(row=3, column=i)
+            tk.Button(self.root, text=text, command=command, width=5, padx=15, pady=5, ).grid(row=3, column=i)
 
     def get_values(self):
         try:

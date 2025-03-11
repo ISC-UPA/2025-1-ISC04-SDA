@@ -16,9 +16,10 @@ from U2.colasP import Cola
 b = Cola()
 
 
-token = "34"   # 3 -34.0 100 100.0 3.14 -3.14 3.14e-1 -3.14e-1
+token = "-34"   # 3 -34.0 100 100.0 3.14 -3.14 3.14e-1 -3.14e-1
 try:
     # print(token.isdigit())
+    # print(token.isnumeric())
     print(isinstance(float(token), float))
 except:
     print("No es un numero")
