@@ -16,13 +16,21 @@ from U2.colasP import Cola
 b = Cola()
 
 
-token = "-34"   # 3 -34.0 100 100.0 3.14 -3.14 3.14e-1 -3.14e-1
+token = "-3.14e-1a"   # 3 -34.0 100 100.0 3.14 -3.14 3.14e-1 -3.14e-1
 try:
     # print(token.isdigit())
     # print(token.isnumeric())
     print(isinstance(float(token), float))
 except:
     print("No es un numero")
+
+token = "simon -3.14e-1a"   # 3 -34.0 100 100.0 3.14 -3.14 3.14e-1 -3.14e-1
+posicion = token.rfind(" ")
+malo = token[posicion+1:]
+token  = token[:posicion+1]
+
+print("Malo: ", malo)
+print("Bueno:", token)
 
 
 

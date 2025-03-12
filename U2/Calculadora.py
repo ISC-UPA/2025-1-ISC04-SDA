@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import messagebox
 import numpy as np
 from math import sin as seno, log as ln, log10 as log
-
+                            # e^x=exp(x),      10^x  
 class Calculadora:
     def __init__(self, root):
         self.root = root
@@ -15,9 +15,9 @@ class Calculadora:
         self.entry_result = tk.StringVar()
 
         self.frameDisplay = tk.Frame(self.root,  bg="#f0f0f0")
-        self.frameDisplay.pack(fill='both', expand=True)        
+        self.frameDisplay.pack(fill='both', expand=False)        
         
-        self.frameTeclado = tk.Frame(self.root,  bg="#f0f0f0")
+        self.frameTeclado = tk.Frame(self.root,  bg="#e0e0e0")
         self.frameTeclado.pack(fill='both', expand=True)        
         
         self.create_Display()
